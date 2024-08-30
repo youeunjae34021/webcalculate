@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>웹프 4차 계산기</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="calculator-container">
+        <div class="calculator">
+            <div class="display" id="display">0</div>
+            <div class="buttons">
+                <button onclick="clear()">C</button>
+                <button onclick="calculatesee('/')">÷</button>
+                <button onclick="calculatesee('*')">×</button>
+                <button onclick="calculatesee('-')">-</button>
+                <button onclick="calculatesee('7')">7</button>
+                <button onclick="calculatesee('8')">8</button>
+                <button onclick="calculatesee('9')">9</button>
+                <button onclick="calculatesee('+')">+</button>
+                <button onclick="calculatesee('4')">4</button>
+                <button onclick="calculatesee('5')">5</button>
+                <button onclick="calculatesee('6')">6</button>
+                <button onclick="calculatesee('.')">.</button>
+                <button onclick="calculatesee('1')">1</button>
+                <button onclick="calculatesee('2')">2</button>
+                <button onclick="calculatesee('3')">3</button>
+                <button onclick="calculatesee('0')">0</button>
+                <button onclick="calculate()">=</button>
+            </div>
+        </div>
+        <div class="calculated">
+            <h3>계산 기록</h3>
+            <button onclick="clearcalculatelist()" id="clearcalculatelistButton">기록 삭제</button>
+            <ul id="calculateList">
+                <!-- 계산 기록이 여기에 표시됩니당 -->
+            </ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

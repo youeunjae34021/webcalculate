@@ -1,0 +1,102 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f7f7f7;
+    margin: 0;
+}
+
+.calculator-container {
+    display: flex;
+    align-items: flex-start;
+}
+
+.calculator {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    width: 300px;
+    margin-right: 20px; 
+}
+
+.display {
+    background-color: #333;
+    color: #fff;
+    font-size: 2em;
+    text-align: right;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+button {
+    font-size: 1.5em;
+    padding: 20px;
+    border: 1px solid #ddd;
+    background-color: #eee;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+button:hover {
+    background-color: #ddd;
+}
+
+button:active {
+    background-color: #ccc;
+}
+
+button.equal-sign {
+    grid-column: span 4; /* Make the button span all columns */
+}
+
+.calculated {
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 200px; 
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+.calculated h3 {
+    font-size: 1.2em;
+    margin: 0 0 10px 0;
+    text-align: center;
+}
+
+#clearcalculatelistButton {
+    background-color: #ff6666;
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+#clearcalculatelistButton:hover {
+    background-color: #ff4d4d;
+}
+
+#calculateList {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    font-size: 1.1em;
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+#calculateList li {
+    padding: 5px;
+    border-bottom: 1px solid #ddd;
+    font-size: 0.9em; 
+}
